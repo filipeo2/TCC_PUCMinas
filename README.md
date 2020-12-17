@@ -1,2 +1,3 @@
-# TCC_PUCMinas
-Arquivos complementares à entrega do TCC de Arquitetura de Software Distribuído
+# TCC PUCMinas
+Arquivos complementares do TCC do Curso de Especialização em Arquitetura de Software Distribuído, entregue em dezembro de 2020.
+

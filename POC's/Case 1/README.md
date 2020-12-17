@@ -1,4 +1,4 @@
-## POC #1 - Aplicação web responsiva
+# POC #1 - Aplicação web responsiva
 
 O vídeo desta demonstração está disponível no [YouTube](https://youtu.be/VZhOMJkM_Ec)
 
