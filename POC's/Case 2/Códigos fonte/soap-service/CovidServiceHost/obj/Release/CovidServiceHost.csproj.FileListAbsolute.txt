@@ -1,0 +1,11 @@
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidServiceHost.exe.config
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidServiceHost.exe
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidServiceHost.pdb
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidWcf.dll
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidWcf.pdb
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidWcf.dll.config
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\obj\Release\CovidServiceHost.csprojAssemblyReference.cache
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\obj\Release\CovidServiceHost.csproj.CoreCompileInputs.cache
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\obj\Release\CovidServiceHost.csproj.CopyComplete
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\obj\Release\CovidServiceHost.exe
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\obj\Release\CovidServiceHost.pdb

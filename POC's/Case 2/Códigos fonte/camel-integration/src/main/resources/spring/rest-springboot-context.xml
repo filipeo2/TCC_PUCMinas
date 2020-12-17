@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:cxf="http://camel.apache.org/schema/cxf"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd         http://camel.apache.org/schema/cxf http://camel.apache.org/schema/cxf/camel-cxf.xsd         http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+    <camelContext xmlns="http://camel.apache.org/schema/spring">
+
+        <dataFormats>
+            <xmljson id="xmljson"/>
+        </dataFormats>
+
+        <!-- Montar componente REST na camada de integração que abstrairá o serviço SOAP legado -->
+        <restConfiguration bindingMode="json" component="jetty"
+            host="localhost" port="8734"/>
+        <rest path="/CovidRest">
+            <get
+                outType="com.filipeo2.integracao.rest.ArrayOfCovid"
+                type="java.lang.String" uri="/covid/{DateParameter}">
+                <to uri="direct:GetCovidByDate"/>
+            </get>
+        </rest>
+
+        <route id="GetCovidByDate">
+            <from id="GetCovidByDate" uri="direct:GetCovidByDate"/>
+<!--            <log loggingLevel="INFO" message="Headers      : ${headers}"/>-->
+            <log loggingLevel="INFO" message="DateParameter: ${header.DateParameter}"/>
+            <!-- <log loggingLevel="INFO" message="GetCovidByDate: ${header.CamelHttpQuery[0]}"/> -->
+
+            <!-- Chamada ao SOAP via CXF -->
+            <setBody>
+                 <simple>&quot;${header.DateParameter}&quot;</simple>
+            </setBody>
+            <unmarshal>
+                <json library="Jackson" unmarshalTypeName="java.lang.String"/>
+            </unmarshal>
+            <to uri="cxf://http://localhost:8733/Design_Time_Addresses/CovidWcf/Service1/?serviceClass=com.filipeo2.integracao.soap.ICovidService&amp;defaultOperationName=GetCovidByDate"/>
+
+            <!-- Monta retorno REST em JSON, fazendo conversão automática entre o XML da resposta do serviço SOAP e o JSON de saída da rota Camel para o cliente (via xmljson) -->
+            <setHeader headerName="Content-Type">
+                <constant>application/json</constant>
+            </setHeader>
+            <setBody>
+                <simple>${body[0]}</simple>
+            </setBody>
+<!--            <log loggingLevel="INFO" message="JSONResponse: ${headers}"/>-->
+<!--            <log loggingLevel="INFO" message="JSONResponse: ${body}"/>-->
+            <log loggingLevel="INFO" message="OK!"/>
+        </route>
+    </camelContext>
+</beans>

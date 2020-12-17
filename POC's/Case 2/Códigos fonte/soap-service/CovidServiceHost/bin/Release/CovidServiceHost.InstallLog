@@ -1,0 +1,21 @@
+﻿Desinstalando o assembly 'C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidServiceHost.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidServiceHost.InstallLog
+   assemblypath = C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidServiceHost.exe
+Removendo a origem do EventLog WCFCovidService.
+Serviço WCFCovidService está sendo removido do sistema...
+Serviço WCFCovidService foi removido com êxito do sistema.
+Instalando o assembly 'C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidServiceHost.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidServiceHost.InstallLog
+   assemblypath = C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidServiceHost.exe
+Instalando o serviço WCFCovidService...
+Serviço WCFCovidService foi instalado com êxito.
+Criando a origem de EventLog WCFCovidService no log Application...
+Confirmando o assembly 'C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidServiceHost.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidServiceHost.InstallLog
+   assemblypath = C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Release\CovidServiceHost.exe

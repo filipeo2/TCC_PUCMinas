@@ -1,0 +1,7 @@
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidWcf\bin\Debug\CovidWcf.dll.config
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidWcf\bin\Debug\CovidWcf.dll
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidWcf\bin\Debug\CovidWcf.pdb
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidWcf\obj\Debug\CovidWcf.csprojAssemblyReference.cache
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidWcf\obj\Debug\CovidWcf.csproj.CoreCompileInputs.cache
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidWcf\obj\Debug\CovidWcf.dll
+C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidWcf\obj\Debug\CovidWcf.pdb

@@ -1,0 +1,12 @@
+com\filipeo2\integracao\soap\CovidService.class
+com\filipeo2\integracao\soap\GetCovidByDate.class
+com\filipeo2\integracao\Application.class
+com\filipeo2\integracao\rest\package-info.class
+com\filipeo2\integracao\soapfactory\ObjectFactory.class
+com\filipeo2\integracao\soap\package-info.class
+com\filipeo2\integracao\rest\ObjectFactory.class
+com\filipeo2\integracao\soap\ObjectFactory.class
+com\filipeo2\integracao\soap\GetCovidByDateResponse.class
+com\filipeo2\integracao\soap\ICovidService.class
+com\filipeo2\integracao\rest\ArrayOfCovid.class
+com\filipeo2\integracao\rest\Covid.class

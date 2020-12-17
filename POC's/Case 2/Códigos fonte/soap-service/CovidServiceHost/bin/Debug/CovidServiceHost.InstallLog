@@ -1,0 +1,16 @@
+﻿Instalando o assembly 'C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Debug\CovidServiceHost.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Debug\CovidServiceHost.InstallLog
+   assemblypath = C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Debug\CovidServiceHost.exe
+Instalando o serviço WCFCovidService...
+Criando a origem de EventLog WCFCovidService no log Application...
+Revertendo o assembly 'C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Debug\CovidServiceHost.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Debug\CovidServiceHost.InstallLog
+   assemblypath = C:\Users\mailf\Google Drive\Documents\Conhecimento\Cursos\Pós PUC Minas\TCC\Case 2 - Integração com outro sistema\Service\CovidServiceHost\bin\Debug\CovidServiceHost.exe
+Restaurando o log de eventos para o estado anterior da origem WCFCovidService.
+Ocorreu uma exceção durante a fase de reversão do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Fonte não encontrada, mas alguns ou todos os logs de evento não puderam ser pesquisados. Logs inacessíveis: Security, State.
+Ocorreu uma exceção durante a fase de reversão da instalação. Essa exceção será ignorada e a reversão continuará. Mas talvez o computador não reverta totalmente para o estado inicial após a conclusão da reversão.

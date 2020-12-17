@@ -1,0 +1,210 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IEnumerable<WebApplication.Models.ContagemDiariaCovidFormatado>
+
+@*Menu principal colapsável*@
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <h3 class="w3-wide">SGM</h3>
+    </div>
+    <div class="w3-padding-30 w3-large w3-text-grey" style="font-weight:bold">
+        <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Início</a>
+        <a onclick="colapsarMenuEducacao()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="btnEducacao">
+            Educação&nbsp;<i class="fa fa-caret-down"></i>
+        </a>
+        <div id="demoAccEducacao" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="#" class="w3-bar-item w3-button">Aproveitamento escolar</a>
+            <a href="#" class="w3-bar-item w3-button">Parcerias público-privadas</a>
+            <a href="#" class="w3-bar-item w3-button">Administração de usuários educadores</a>
+            <a href="#" class="w3-bar-item w3-button">Acessos dos professores aos sistemas</a>
+        </div>
+        <a onclick="colapsarMenuSaude()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="btnSaude">
+            Saúde&nbsp;<i class="fa fa-caret-down"></i>
+        </a>
+        <div id="demoAccSaude" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="#" class="w3-bar-item w3-button">Doenças reportadas</a>
+            <a href="#" class="w3-bar-item w3-button">Pedidos de insumos médicos</a>
+            <a href="#" class="w3-bar-item w3-button">Parcerias público-privadas</a>
+            <a href="#" class="w3-bar-item w3-button">Administração de usuários da saúde</a>
+            <a href="#" class="w3-bar-item w3-button">Acessos dos médicos aos sistemas</a>
+        </div>
+        <a onclick="colapsarMenuTransporte()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="btnTransporte">
+            Transporte&nbsp;<i class="fa fa-caret-down"></i>
+        </a>
+        <div id="demoAccTransporte" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="#" class="w3-bar-item w3-button">Ônibus</a>
+            <a href="#" class="w3-bar-item w3-button">Vans</a>
+            <a href="#" class="w3-bar-item w3-button">Escolar</a>
+            <a href="#" class="w3-bar-item w3-button">Ciclovias</a>
+        </div>
+        <a onclick="colapsarMenuImpostos()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="btnImpostos">
+            Impostos&nbsp;<i class="fa fa-caret-down"></i>
+        </a>
+        <div id="demoAccImpostos" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="#" class="w3-bar-item w3-button">Arrecadação anual</a>
+            <a href="#" class="w3-bar-item w3-button">Consulta a inadimplentes</a>
+            <a href="#" class="w3-bar-item w3-button">Comprovantes de pagamentos (rede bancária)</a>
+        </div>
+        <a onclick="colapsarMenuDiversos()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="btnDiversos">
+            Diversos&nbsp;<i class="fa fa-caret-down"></i>
+        </a>
+        <div id="demoAccDiversos" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="#" class="w3-bar-item w3-button">Disque-denúncia</a>
+            <a href="#" class="w3-bar-item w3-button">Solicitações de poda de árvores</a>
+            <a href="#" class="w3-bar-item w3-button">Avisos de vazamento de água (rede pública)</a>
+        </div>
+    </div>
+</nav>
+
+@*Menu principal colapsável pequeno*@
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <div class="w3-bar-item w3-padding-24 w3-wide">Bom Destino</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+@*Conteúdo principal*@
+<div class="w3-main" style="margin-left:250px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    @*Header*@
+    <header class="w3-container w3-xlarge">
+        <p class="w3-left"><b>SGM</b></p>
+        <p class="w3-right w3-medium">
+            Olá, Fulano! [<a href="">Sair</a>]
+        </p>
+    </header>
+
+    <!-- Primeira parte -->
+    <div class="w3-row w3-grayscale">
+        <div class="w3-col l6 s12">
+
+            @*Quadro últimos relatórios*@
+            <div class="w3-container">
+                <div class="w3-display-container w3-panel w3-border w3-round-xlarge w3-padding-24" style="height: 600px;">
+                    Últimos relatórios
+                    <hr />
+                    10/12/2020 - 09:03 - tags <span class="w3-green">&nbsp;Geográficos&nbsp;</span><br />
+                    <a href="">Novas áreas de plantação identificadas no último bimestre</a>
+                    <hr />
+                    10/12/2020 - 09:02 - tags <span class="w3-green">&nbsp;Saúde&nbsp;</span><br />
+                    <a href="">Atendimento nos postos de saúde do último mês por CID</a>
+                    <hr />
+                    10/12/2020 - 09:01 - tags <span class="w3-green">&nbsp;Educação&nbsp;</span>&nbsp;<span class="w3-green">&nbsp;Planejamento&nbsp;</span><br />
+                    <a href="">Nota média dos alunos por escola (3º tri 2020)</a>
+                    <hr />
+                    09/12/2020 - 09:15 - tags <span class="w3-green">&nbsp;Impostos&nbsp;</span><br />
+                    <a href="">Destinação dos impostos por setor de desenvolvimento humano</a>
+                    <hr />
+                    08/12/2020 - 10:37 - tags <span class="w3-green">&nbsp;Projetos&nbsp;</span>&nbsp;<span class="w3-green">&nbsp;Transporte&nbsp;</span><br />
+                    <a href="">Andamento do recapeamento das vias urbanas</a>
+                    <hr />
+                </div>
+            </div>
+
+            @*Quadro Gestão de projetos abaixo*@
+            <div class="w3-container">
+                <div class="w3-display-container w3-panel w3-border w3-round-xlarge w3-padding-24">
+                    Gestão de projetos
+                    <hr />
+                    <a href="">Clique aqui</a> para acessar o Gerenciamento de Projetos.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-col l6 s12">
+
+            @*Quadro Aviso emergencial COVID*@
+            <div class="w3-container">
+                <div class="w3-display-container w3-panel w3-border w3-round-xlarge w3-padding-24 w3-pale-red" style="height: 600px; font-weight:bold">
+                    Quadro de aviso emergencial COVID-19<br />Fechamento diário de casos
+                    <div class="text-center">
+                        <hr />
+                        <table class="w3-table">
+                            <thead>
+                                <tr>
+                                    <th>@Html.DisplayNameFor(model => model.Data)</th>
+                                    <th>@Html.DisplayNameFor(model => model.Total)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@Html.DisplayFor(modelItem => item.Data)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Total)</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        @ViewBag.Mensagem
+                    </div>
+                </div>
+            </div>
+            
+            @*Quadro Dashboard de acompanhamento*@
+            <div class="w3-container">
+                <div class="w3-display-container w3-panel w3-border w3-round-xlarge w3-padding-24">
+                    Dashboards de acompanhamento
+                    <hr />
+                    <div class="w3-center">
+                        <img src="https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/ccjc/noticias/ccj-aprova-exigencia-de-meta-de-desempenho-para-acoes-do-governo-com-beneficios-fiscais/image" height="275" /><br />
+                        <a href="">Clique aqui </a> para acessar seus dashboards personalizados.<br />
+                        Use o aplicativo PowerBi Desktop para criar novos estudos.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    @*Rodapé*@
+    <div class="w3-light-grey w3-center w3-padding-small">Desenvolvido por Filipe Oliveira | <a href="mailto:filipeo.oliveira89@gmail.com" class="w3-hover-opacity">filipeo.oliveira89@gmail.com</a></div>
+
+</div>
+
+<script>
+// Accordion
+function colapsarMenuEducacao() {
+  var x = document.getElementById("demoAccEducacao");
+  if (x.className.indexOf("w3-show") == -1) { x.className += " w3-show"; } else { x.className = x.className.replace(" w3-show", ""); }
+}
+function colapsarMenuSaude() {
+  var x = document.getElementById("demoAccSaude");
+  if (x.className.indexOf("w3-show") == -1) { x.className += " w3-show"; } else { x.className = x.className.replace(" w3-show", ""); }
+}
+function colapsarMenuTransporte() {
+  var x = document.getElementById("demoAccTransporte");
+  if (x.className.indexOf("w3-show") == -1) { x.className += " w3-show"; } else { x.className = x.className.replace(" w3-show", ""); }
+}
+function colapsarMenuImpostos() {
+  var x = document.getElementById("demoAccImpostos");
+  if (x.className.indexOf("w3-show") == -1) { x.className += " w3-show"; } else { x.className = x.className.replace(" w3-show", ""); }
+}
+function colapsarMenuDiversos() {
+  var x = document.getElementById("demoAccDiversos");
+  if (x.className.indexOf("w3-show") == -1) { x.className += " w3-show"; } else { x.className = x.className.replace(" w3-show", ""); }
+}
+
+// Click on the menu button on menu to open the accordion for demo purposes
+//document.getElementById("btnEducacao").click();
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
