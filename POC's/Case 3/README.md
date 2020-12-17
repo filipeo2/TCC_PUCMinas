@@ -7,7 +7,7 @@ O vídeo desta demonstração está disponível no [YouTube](https://youtu.be/1t
 ## Instruções
 
 #### 1º - Opção 1 - Restaurar backup do banco de dados SQL Server 2019 (versão utilizada 15.0.2070.41)
-- Instalar o SQL Server Management 18 (versão utilizada 15.0.18358.0) e restaurar o backup `master.bak` no database `master` disponibilizado na pasta [./Backup do DW](./Backup&nbsp;do&nbsp;DW)
+- Instalar o SQL Server Management 18 (versão utilizada 15.0.18358.0) e restaurar o backup `master.bak` no database `master` disponibilizado na pasta `./Backup do DW`
 
 *Para detalhes sobre a restauração: https://docs.microsoft.com/pt-br/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-ver15*
 
@@ -16,7 +16,7 @@ O vídeo desta demonstração está disponível no [YouTube](https://youtu.be/1t
 
 Além do backup disponibilizado na opção 1, o conteúdo das tabelas está disponível também em excel para ser importado via utilitário.
 
-- Utilizar o utilitário `SQL Server Import and Export Data` já disponibilizado com a instalação do SQL Server para importar os dados presentes em cada uma das abas do Excel `DadosCompletos.xlsx` , disponibilizado no caminho [Backup do DW](./Backup&nbsp;do&nbsp;DW)
+- Utilizar o utilitário `SQL Server Import and Export Data` já disponibilizado com a instalação do SQL Server para importar os dados presentes em cada uma das abas do Excel `DadosCompletos.xlsx` , disponibilizado no caminho `Backup do DW`
 
 - Durante a importação selecionar `Microsoft Excel` como data source e o arquivo excel, selecionar `Microsoft OLE DB Driver for SQLServer` e o database master como destino. Escolher a opção `Copy data from one or more tables or views` e selecionar as 6 tabelas `DM*-*`
 

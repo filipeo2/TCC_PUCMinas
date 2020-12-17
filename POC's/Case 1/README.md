@@ -2,7 +2,7 @@
 
 O vídeo desta demonstração está disponível no [YouTube](https://youtu.be/VZhOMJkM_Ec)
 
-O código fonte desta POC está disponível na pasta [Códigos fonte](./Codigos&nbsp;Fontes)
+O código fonte desta POC está disponível na pasta `Códigos fonte`.
 
 ***
 
