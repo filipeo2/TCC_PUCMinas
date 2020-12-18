@@ -1,3 +1,7 @@
-# TCC PUCMinas
-Arquivos complementares do TCC do Curso de Especialização em Arquitetura de Software Distribuído, entregue em dezembro de 2020.
+# TCC - Arquitetura de Software Distribuído
+Repositório com arquivos complementares ao TCC entregue.
 
+Curso: Pós-graduação em Arquitetura de Software Distribuído
+Autor: Filipe Oliveira e Oliveira
+Entrega: 18/12/2020
+Orientador: Prof. Dr. Pedro Alves de Oliveira
